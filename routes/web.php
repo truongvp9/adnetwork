@@ -12,7 +12,7 @@
 */
 
 Route::get('/', [
-    'middleware' => 'auth',
+    //'middleware' => 'auth',
     'uses' => 'HomeController@index'
 ])->name('index');
 
@@ -47,6 +47,6 @@ Route::group(array('prefix'=>'/templates/'),function(){
     }));
 });
 
-Auth::routes();
+//Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
