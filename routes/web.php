@@ -32,6 +32,7 @@ Route::get('/clients', 'ClientController@index');
 
 Route::group(['middleware' => ['web']], function () {
     Route::resource('ads', 'AdController');
+    Route::resource('banners', 'BannerController');
     Route::resource('items', 'ItemController');
     Route::resource('clients', 'ClientController');
     Route::resource('websites', 'WebsiteController');

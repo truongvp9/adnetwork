@@ -33,7 +33,8 @@
 
 	<!-- App Controller -->
         <script src="{{ asset('/app/controllers/AdController.js') }}"></script>
-	<script src="{{ asset('/app/controllers/ItemController.js') }}"></script>
+        <script src="{{ asset('/app/controllers/BannerController.js') }}"></script>
+        <script src="{{ asset('/app/controllers/ItemController.js') }}"></script>
         <script src="{{ asset('/app/controllers/ClientController.js') }}"></script>
         <script src="{{ asset('/app/controllers/WebsiteController.js') }}"></script>
 </head>
@@ -56,6 +57,7 @@
                                         <li><a href="#/clients">Advertisers</a></li>
                                         <li><a href="#/websites">Publishers</a></li>
 					<li><a href="#/ads">Ads</a></li>
+                                        <li><a href="#/banners">Banners</a></li>
 				</ul>
 			</div>
 		</div>

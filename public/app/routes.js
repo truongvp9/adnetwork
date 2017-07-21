@@ -11,6 +11,10 @@ app.config(['$routeProvider',
                 templateUrl: 'templates/ads.html',
                 controller: 'AdController'
             }).
+            when('/banners', {
+                templateUrl: 'templates/banners.html',
+                controller: 'BannerController'
+            }).
             when('/items', {
                 templateUrl: 'templates/items.html',
                 controller: 'ItemController'
