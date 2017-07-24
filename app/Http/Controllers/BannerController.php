@@ -88,7 +88,7 @@ class BannerController extends Controller
         //
         $input = $request->all();
 
-        Ad::where("id",$id)->update($input);
+        Banner::where("id",$id)->update($input);
         $item = Banner::find($id);
         return response($item);
     }
