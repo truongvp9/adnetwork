@@ -15,5 +15,5 @@ class Banner extends Model
 {
     //
     public $fillable = ['name','image_','target_'];
-    public $timestamps = false;
+    //public $timestamps = false;
 }
