@@ -1,0 +1,15 @@
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script>
+	$( document ).ready(function() {
+	$.ajax({
+	  method: "POST",
+	  url: "http://10.12.11.161:5000/getAds",
+	  dataType: "json",
+	  contentType: "application/json",
+	  data: {"paper":"Nút Home của iPhone 8 có thể sẽ hoạt động giống thanh điều khiển trên Android, tức là sẽ liên tục xuất hiện trên màn hình để bạn thoát về màn hình chính. Tuy nhiên, với các ứng dụng cần chế độ full screen, nút home này sẽ biến mất, khi nào cần dùng chúng ta sẽ vuốt từ dưới lên để nó xuất hiện trở lại. Với việc sử dụng nút home ảo này thì diện tích hiển thị thực tế của iPhone 8 sẽ là 5.15. Hiện tại người ta chưa tìm được bất cứ lệnh nào liên quan đến việc chỉnh sửa màu sắc của nút home cũng như can thiệp vào khu vực này, cho thấy rất có thể Apple sẽ dùng khu vực bên cạnh nút home cho một số tính năng khác"} 
+	})
+	  .done(function( msg ) {
+		alert( "Data Saved: " + msg );
+	  });
+	});
+</script>

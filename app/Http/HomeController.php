@@ -25,7 +25,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        
+        //echo 'abc'; die;
         return view('app');
     }
 }

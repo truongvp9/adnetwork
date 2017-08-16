@@ -11,13 +11,22 @@
 |
 */
 
-Route::get('/', [
+Route::any('/', [
+    //'middleware' => 'auth',
+    'uses' => 'HomeController@addnewads'
+    //'uses' => 'HomeController@index'
+])->name('index');
+
+Route::any('/clients', [
     //'middleware' => 'auth',
     'uses' => 'HomeController@index'
 ])->name('index');
 
-
 Route::get('/clients', 'ClientController@index');
+
+Route::any('/newcustomer','HomeController@addnewads');
+
+Route::any('/postads','HomeController@newads');
 
 /*
 |--------------------------------------------------------------------------
