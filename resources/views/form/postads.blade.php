@@ -6,7 +6,7 @@
             <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
             <meta name="description" content="">
             <meta name="author" content="">
-            <title>Bootstrap</title>
+            <title>THÔNG TIN QUẢNG CÁO</title>
             <link rel="stylesheet" media="screen" href="css/bootstrap.min.css">
             <link rel="stylesheet" media="screen"  href="css/bootstrap-theme.min.css">
             <link rel="stylrsheet" media="screen" href="css/myweb.css">
@@ -57,8 +57,7 @@
                            <div class="form-group">
                            <label for="Mo ta" class="col-xs-2 col-sm-2 col-md-2 control-label">Mô tả ngắn:</label>  
                                   <div class="col-xs-6 col-sm-6 col-md-6">
-                                            <textarea name="description" class="form-control" id="mo ta " rows="5" >
-                                            </textarea>
+                                            <textarea name="description" class="form-control" id="mo ta " rows="5"></textarea>
                                    </div>
                            </div><!--end from-group-->
                     

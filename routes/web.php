@@ -12,13 +12,13 @@
 */
 
 Route::any('/', [
-    //'middleware' => 'auth',
-    'uses' => 'HomeController@addnewads'
-    //'uses' => 'HomeController@index'
+    'middleware' => 'auth',
+    //'uses' => 'HomeController@addnewads'
+    'uses' => 'HomeController@index'
 ])->name('index');
 
 Route::any('/clients', [
-    //'middleware' => 'auth',
+    'middleware' => 'auth',
     'uses' => 'HomeController@index'
 ])->name('index');
 
@@ -57,6 +57,7 @@ Route::group(array('prefix'=>'/templates/'),function(){
     }));
 });
 
-//Auth::routes();
+Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
