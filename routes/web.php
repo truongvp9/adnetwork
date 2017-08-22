@@ -22,6 +22,8 @@ Route::any('/clients', [
     'uses' => 'HomeController@index'
 ])->name('index');
 
+Route::get('/admin', 'HomeController@admin');
+
 Route::get('/clients', 'ClientController@index');
 
 Route::any('/newcustomer','HomeController@addnewads');

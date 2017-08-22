@@ -28,6 +28,11 @@ class HomeController extends Controller
     {   
         return view('home');
     }
+	
+	public function admin()
+    {   
+        return view('app');
+    }
     
     public function addnewads(Request $request) {
         $input = $request->all();

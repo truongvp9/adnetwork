@@ -10,12 +10,12 @@
                
                 <div class="col-xs-8 col-sm-8 col-md-8">
                      
-                           <h3>QUẢNG CÁO</h3>
+                           <h3>&nbsp;&nbsp;QUẢNG CÁO</h3>
                   
                            <div class="form-group">
                                   <label for="Tieu de" class="col-xs-2 col-sm-2 col-md-2 control-label">Tiêu đề:</label>
                                   <div class="col-xs-6 col-sm-6 col-md-6">
-                                           <input type="text" name="title" class="form-control" id="TD" placeholder="Nhập vào tiêu đề quảng cáo">
+                                           <input type="text" name="title" class="form-control" id="TD" required placeholder="Nhập vào tiêu đề quảng cáo">
                                   </div><!--end col-md-6-->
                            </div><!--end from-group-->
 						   <div style="clear:both;"></div>
@@ -24,7 +24,7 @@
                                   <div class="col-xs-6 col-sm-6 col-md-6">
                                             <input type="file" name="image1"  class="form-control" id="fileResume" placeholder="Nhập vào ảnh">
                                             <br>
-                                            <input type="text" name="image"  class="form-control" id="fileResume" placeholder="Nhập vào ảnh">
+                                            <input type="text" name="image"  class="form-control"  id="fileResume" required placeholder="Nhập vào ảnh">
                                   </div><!--end col-md-6-->
                            </div><!--end from-group-->
 							<div style="clear:both;"></div>
@@ -34,15 +34,15 @@
                                           <p style="color:lightgoldyellow;"><small>Ví dụ: http://vp9.vn</small></p>
                                           <input type="url" name="target_" class="form-control" id="Link" placeholder="Nhập vào đường dẫn">
                                           <br>
-                                          <input type="text" name="price"  class="form-control" id="fileResume" placeholder="Nhập vào giá sản phẩm">
+                                          <input type="text" name="price"  class="form-control" id="fileResume" required placeholder="Nhập vào giá sản phẩm">
                                   </div><!--end col-md-6-->
                            </div><!--end from-group-->
 							<div style="clear:both;"></div>
                            <div class="form-group">
                            <label for="Mo ta" class="col-xs-2 col-sm-2 col-md-2 control-label">Mô tả ngắn:</label>  
                                   <div class="col-xs-6 col-sm-6 col-md-6">
-                                            <textarea name="description" class="form-control" id="mo ta " rows="5"></textarea>
-                                   </div>
+                                        <textarea name="description" class="form-control" id="mo ta " required rows="5"></textarea>
+                                  </div>
                            </div><!--end from-group-->
                     
                           <div class="form-group">
