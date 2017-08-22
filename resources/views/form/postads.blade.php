@@ -3,7 +3,7 @@
 @section('content')
 <!DOCTYPE html>
 <div class="container">
-           <form action="/dangquangcao.php" method="post">
+           <form action="/postads" method="post">
            {{ csrf_field() }} 
             <div class="row">
                 

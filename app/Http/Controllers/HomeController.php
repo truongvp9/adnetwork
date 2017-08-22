@@ -6,6 +6,7 @@ use App\Http\Requests;
 use Illuminate\Http\Request;
 use App\Client;
 use App\Banner;
+use Auth;
 
 class HomeController extends Controller
 {
@@ -45,17 +46,20 @@ class HomeController extends Controller
     public function newads(Request $request) {        
         $input = $request->all(); 
         $data = array();
+		$user = Auth::User();     
+        $userId = $user->id;
         //print_r($input); die;
         $result = '';
         if (isset($_POST['cmd'])) {
-            $data['description'] = $input['description'];
-            $data['image'] = $input['image'];
+            $data['target_'] = $input['target_'];
+            $data['image_'] = $input['image'];
             $data['price'] = $input['price'];
-            $data['title'] = $input['title'];
-            //$create = Banner::create($input);
+            $data['name'] = $input['title'];
+			$data['userid'] = $userId;
+            $create = Banner::create($data);
             //print_r($input); die;
-            $result = $this->processads($data);
-            print_r($result); die;
+            //$result = $this->processads($data);
+            //print_r($result); die;
         }
         return view("form.postads");  
     }

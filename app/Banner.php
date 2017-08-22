@@ -14,6 +14,6 @@ use Illuminate\Database\Eloquent\Model;
 class Banner extends Model
 {
     //
-    public $fillable = ['name','image_','target_'];
+    public $fillable = ['name','image_','target_','price','userid'];
     public $timestamps = false;
 }
