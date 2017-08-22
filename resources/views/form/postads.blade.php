@@ -1,59 +1,43 @@
+@extends('layouts.app')
+
+@section('content')
 <!DOCTYPE html>
-<html lang="en">
-     <head>
-           <meta charset="utf-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-            <meta name="description" content="">
-            <meta name="author" content="">
-            <title>THÔNG TIN QUẢNG CÁO</title>
-            <link rel="stylesheet" media="screen" href="css/bootstrap.min.css">
-            <link rel="stylesheet" media="screen"  href="css/bootstrap-theme.min.css">
-            <link rel="stylrsheet" media="screen" href="css/myweb.css">
-            <link rel="icon" href="">
-            <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-            <script type="text/javascript" src="js/bootstrap.min.js"></script>
-            <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-     </head>
-     <body>
+<div class="container">
            <form action="/dangquangcao.php" method="post">
            {{ csrf_field() }} 
             <div class="row">
                 
-                <div class="col-xs-2 col-sm-2 col-md-2 ">
-                </div>
-               
                
                 <div class="col-xs-8 col-sm-8 col-md-8">
                      
-                           <h3>THÔNG TIN QUẢNG CÁO</h3>
+                           <h3>QUẢNG CÁO</h3>
                   
                            <div class="form-group">
                                   <label for="Tieu de" class="col-xs-2 col-sm-2 col-md-2 control-label">Tiêu đề:</label>
                                   <div class="col-xs-6 col-sm-6 col-md-6">
-                                           <input type="text" name="title" class="form-control" id="TD" placeholder="Enter tiêu đề">
+                                           <input type="text" name="title" class="form-control" id="TD" placeholder="Nhập vào tiêu đề quảng cáo">
                                   </div><!--end col-md-6-->
                            </div><!--end from-group-->
-                  
+						   <div style="clear:both;"></div>
                            <div class="form-group">
                                   <label for="Anh " class="col-xs-2 col-sm-2 col-md-2 control-label">Hình ảnh :</label> 
                                   <div class="col-xs-6 col-sm-6 col-md-6">
-                                            <input type="file" name="image1"  class="form-control" id="fileResume" placeholder="Enter hình ảnh">
+                                            <input type="file" name="image1"  class="form-control" id="fileResume" placeholder="Nhập vào ảnh">
                                             <br>
-                                            <input type="text" name="image"  class="form-control" id="fileResume" placeholder="Anh quang cao">
+                                            <input type="text" name="image"  class="form-control" id="fileResume" placeholder="Nhập vào ảnh">
                                   </div><!--end col-md-6-->
                            </div><!--end from-group-->
-      
+							<div style="clear:both;"></div>
                           <div class="form-group">
-                          <label for="link" class="col-xs-2 col-sm-2 col-md-2 control-label">Đường dẫn:</label> 
+                          <label for="link" class="col-xs-2 col-sm-2 col-md-2 control-label">URL cần quảng cáo:</label> 
                                   <div class="col-xs-6 col-sm-6 col-md-6">
-                                          <p style="color:lightgoldyellow;"><small>Ví dụ: http://saghdjskdaskd</small></p>
-                                          <input type="url" name="target_" class="form-control" id="Link" placeholder="Enter đường dẫn">
+                                          <p style="color:lightgoldyellow;"><small>Ví dụ: http://vp9.vn</small></p>
+                                          <input type="url" name="target_" class="form-control" id="Link" placeholder="Nhập vào đường dẫn">
                                           <br>
-                                          <input type="text" name="price"  class="form-control" id="fileResume" placeholder="Giá sản phẩm">
+                                          <input type="text" name="price"  class="form-control" id="fileResume" placeholder="Nhập vào giá sản phẩm">
                                   </div><!--end col-md-6-->
                            </div><!--end from-group-->
-                         
+							<div style="clear:both;"></div>
                            <div class="form-group">
                            <label for="Mo ta" class="col-xs-2 col-sm-2 col-md-2 control-label">Mô tả ngắn:</label>  
                                   <div class="col-xs-6 col-sm-6 col-md-6">
@@ -111,5 +95,7 @@
                }
          </script>
          
-     </body>
-</html>
+     </div>
+
+
+@endsection
