@@ -16,6 +16,7 @@
 <table class="table table-bordered pagin-table">
     <thead>
         <tr>
+			<th>Zone</th>
             <th>Start Date</th>
             <th>End Date</th>
             <th>Views</th>
@@ -26,7 +27,8 @@
 		<?php
 		foreach ($item as $key => $value) {?>
 	       <tr dir-paginate="value in data | itemsPerPage:5" total-items="totalItems">
-             <td><?php echo $value->interval_start;?></td>
+		    <td><?php echo $value->zonename;?></td>
+            <td><?php echo $value->interval_start;?></td>
             <td><?php echo $value->interval_end;?></td>
             <td><?php echo $value->impressions;?></td>
             <td><?php echo $value->clicks;?></td>
