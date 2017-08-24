@@ -30,6 +30,8 @@ Route::any('/newcustomer','HomeController@addnewads');
 
 Route::any('/postads','HomeController@newads');
 
+Route::any('/report','HomeController@report');
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes

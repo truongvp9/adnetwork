@@ -34,6 +34,18 @@ class HomeController extends Controller
     {   
         return view('app');
     }
+	
+	public function report()
+    {   
+		$json = file_get_contents("http://localhost/get");
+		$array = json_decode($json);
+		/*
+		foreach ($array as $key => $value) {
+			var_dump($value->clicks);
+		}*/
+		$data['item'] = $array;
+        return view('report',$data);
+    }
     
     public function addnewads(Request $request) {
         $input = $request->all();

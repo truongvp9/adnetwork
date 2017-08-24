@@ -32,6 +32,7 @@
                         Trang chủ
                     </a>
 					<a class="navbar-brand" href="{{ url('/postads') }}">Đăng quảng cáo</a>
+					<a class="navbar-brand" href="{{ url('/report') }}">Báo cáo</a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
