@@ -37,7 +37,7 @@ class HomeController extends Controller
 	
 	public function report()
     {   
-		$json = file_get_contents("http://localhost/get");
+		$json = file_get_contents("http://api.adserver.local/get");
 		$array = json_decode($json);
 		/*
 		foreach ($array as $key => $value) {
